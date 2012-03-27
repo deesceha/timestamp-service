@@ -1,0 +1,21 @@
+h1. Timestamp service
+
+p. this web application can be used to timestamp documents.
+
+h2. Build
+
+After checking out the project you can build the project by:
+
+@mvn clean install@
+
+After successful build the war file should reside under
+
+@timestamp-service-app/target/@
+
+Just deploy it by using for example tomcat and copying it to <TOMCAT_ROOT>/webapps/tss.war.
+
+After deplyoment it should be present under: http://localhost:8080/tss
+
+h2. License
+
+p. This project is licensed under the "Apache Software License, Version 2.0":http://www.apache.org/licenses/LICENSE-2.0/.
