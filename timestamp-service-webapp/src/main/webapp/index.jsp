@@ -1,10 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%
-  response.addHeader("Pragma", "no-cache");
-  response.addHeader("Cache-Control", "no-cache");
-  response.addHeader("Cache-Control","no-store" );
-  response.addDateHeader("Expires", 0);
-%>
+
 <html>
   <head>
     <title>Hello World (Dynamic)</title>
