@@ -1,4 +1,5 @@
+      <hr>
 
       <footer>
-        <p>&copy; Against Patents 2012</p>
+        <p>&copy; BLiTZiDEA 2012</p>
       </footer>
