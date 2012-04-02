@@ -1,4 +1,4 @@
-<html lang="en">
+﻿<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>SiteMesh example: <sitemesh:write property='title'>Title goes here</sitemesh:write></title>
@@ -15,6 +15,8 @@
       }
     </style>
     <link href="sitemesh/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <link href="sitemesh/bootstrap_bidea.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,11 +28,214 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="sitemesh/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="sitemesh/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="sitemesh/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+
     <sitemesh:write property='head'/>
   </head>
   <body>
 
-    <sitemesh:write property='body'>Body goes here. Blah blah blah.</sitemesh:write>
+    <sitemesh:write property='body'>
+
+    <div class="container">
+	  <div class="navbar navbar-fixed-top">
+	    <div class="navbar-inner">
+	      <div class="container">
+	        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </a>
+	        <a class="brand" href="#">BLiTZiDEA</a>
+	        <div class="nav-collapse">
+	          <ul class="nav">
+	            <li class="active"><a href="#">Home</a></li>
+	            <li><a href="#">Discover (great Ideas)</a></li>
+	            <li><a href="#">Documentation</a></li>
+	            <li><a href="#">Contact</a></li>
+	          </ul>
+	          <form class="navbar-search pull-left" action="">
+	            <input type="text" class="search-query span2" placeholder="Search Ideas">
+	          </form>
+	          <ul class="nav pull-right">
+	            <li><a href="#">Link</a></li>
+	            <li class="divider-vertical"></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="#">Action</a></li>
+	                <li><a href="#">Another action</a></li>
+	                <li><a href="#">Something else here</a></li>
+	                <li class="divider"></li>
+	                <li><a href="#">Separated link</a></li>
+	              </ul>
+	            </li>
+	          </ul>
+	        </div><!-- /.nav-collapse -->
+	      </div>
+	    </div><!-- /navbar-inner -->
+	  </div><!-- /navbar -->
+	</div> <!-- /container -->
+
+    <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit2">
+        <h2>Protect your XXXX</h2>
+	     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Timeline Idea Container -->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4 offset1">
+			<h3>Erfindung der Dampfmaschine</h3>
+			<ul class="thumbnails">
+			  <li class="span2">
+			    <a href="#" class="thumbnail">
+			      <img src="http://placehold.it/160x120" alt="">
+			    </a>
+			  </li>
+			  <li class="span2">
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			  </li>
+			  <li>
+			  	<p><a class="btn" href="#">View idea &raquo;</a></p>
+			  </li>
+			  <li>
+				<p><span class="label label-warning">unsigned</span> <span class="label label-success">timestamed</span> <span class="label label-info">5 comments</span></p>
+			  </li>
+			</ul>
+        </div>
+
+        <div class="span4 offset1">
+			<h3>Erfindung der Dampfmaschine</h3>
+			<ul class="thumbnails">
+			  <li class="span2">
+			    <a href="#" class="thumbnail">
+			      <img src="http://placehold.it/160x120" alt="">
+			    </a>
+			  </li>
+			  <li class="span2">
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			  </li>
+			  <li>
+			  	<p><a class="btn" href="#">View idea &raquo;</a></p>
+			  </li>
+			  <li>
+				<p><span class="label label-success">signed</span> <span class="label label-success">timestamed</span> <span class="label label-info">5 comments</span></p>
+			  </li>
+			</ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- timeline with link to specific a year (points to all ideas of this year) -->
+    <div class="container">
+		<img src="http://placehold.it/1140x20" alt="Timeline">
+		<div class="pagination">
+		  <ul>
+		    <li><a href="#">Prev</a></li>
+		    <li><a href="#">1900</a></li>
+		    <li><a href="#">1960</a></li>
+		    <li><a href="#">1996</a></li>
+		    <li><a href="#">1997</a></li>
+		    <li><a href="#">1998</a></li>
+		    <li><a href="#">1999</a></li>
+		    <li><a href="#">2000</a></li>
+		    <li><a href="#">2001</a></li>
+		    <li><a href="#">2002</a></li>
+		    <li><a href="#">2003</a></li>
+		    <li><a href="#">2004</a></li>
+		    <li class="active"><a href="#">2005</a></li>
+		    <li><a href="#">2006</a></li>
+		    <li><a href="#">2007</a></li>
+		    <li><a href="#">2008</a></li>
+		    <li><a href="#">2009</a></li>
+		    <li><a href="#">2010</a></li>
+		    <li><a href="#">2011</a></li>
+		    <li><a href="#">2012</a></li>
+		  </ul>
+		</div>
+    </div> <!-- /container -->
+
+    <!-- Timeline Idea Container -->
+    <!--
+    <div class="container">
+      <div class="row">
+        <div class="span4 offset2">
+			<h3>Erfindung der Dampfmaschine</h3>
+			<ul class="thumbnails">
+			  <li class="span2">
+			    <a href="#" class="thumbnail">
+			      <img src="http://placehold.it/160x120" alt="">
+			    </a>
+			  </li>
+			  <li class="span2">
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			  </li>
+			  <li>
+			  	<p><a class="btn" href="#">View idea &raquo;</a></p>
+			  </li>
+			  <li>
+				<p><span class="label label-warning">unsigned</span> <span class="label label-success">timestamed</span> <span class="label label-info">5 comments</span></p>
+			  </li>
+			</ul>
+        </div>
+
+        <div class="span4 offset1">
+			<h3>Erfindung der Dampfmaschine</h3>
+			<ul class="thumbnails">
+			  <li class="span2">
+			    <a href="#" class="thumbnail">
+			      <img src="http://placehold.it/160x120" alt="">
+			    </a>
+			  </li>
+			  <li class="span2">
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			  </li>
+			  <li>
+			  	<p><a class="btn" href="#">View idea &raquo;</a></p>
+			  </li>
+			  <li>
+				<p><span class="label label-success">signed</span> <span class="label label-success">timestamed</span> <span class="label label-info">5 comments</span></p>
+			  </li>
+			</ul>
+        </div>
+      </div>
+    </div>
+	-->
+	
+    <hr>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>How to Preserve your Idea?</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>What are Timestamps?</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+	        <h2>What are Digital Signatures?</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	        <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; BLiTZiDEA 2012</p>
+      </footer>
+    </div> <!-- /container -->
+
+    </sitemesh:write>
 
      <!-- Le javascript
     ================================================== -->
